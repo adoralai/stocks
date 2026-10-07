@@ -1,1 +1,1 @@
-https://affair-mit-replied-apparel.trycloudflare.com
+https://api.trycloudflare.com
