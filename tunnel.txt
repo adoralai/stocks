@@ -1,1 +1,1 @@
-https://generators-further-filing-vacuum.trycloudflare.com
+https://api.trycloudflare.com
