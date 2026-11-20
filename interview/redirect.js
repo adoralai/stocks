@@ -1,7 +1,6 @@
 "use strict";
 
 const status = document.getElementById("status");
-const invitation = location.hash;
 let retry = 2000;
 
 async function get(url, mode) {
@@ -23,7 +22,7 @@ async function connect() {
     );
     if (!/^https:\/\/[a-z0-9-]+\.trycloudflare\.com$/.test(base)) throw new Error("Invalid address");
     if (await get(`${base}/healthz`, "cors") !== "interview-practice-ok") throw new Error("Unavailable");
-    location.replace(`${base}/${invitation}`);
+    location.replace(`${base}/`);
   } catch {
     status.textContent = "Reconnecting to interview practice…";
     setTimeout(connect, retry);
